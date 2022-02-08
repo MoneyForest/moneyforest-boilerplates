@@ -36,5 +36,5 @@ resource "aws_s3_bucket_object" "index_page" {
   key          = "index.html"
   source       = "www/index.html"
   content_type = "text/html"
-  etag         = filemd5("../www/index.html")
+  etag         = filemd5("www/index.html")
 }
